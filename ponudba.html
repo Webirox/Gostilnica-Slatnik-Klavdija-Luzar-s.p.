@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ponudba — Gostilnica Slatnik</title>
+<meta name="description" content="Jedilnik Gostilnice Slatnik: domače pice, specialitetna Valentinova pica, domači hamburger in krofki.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Na vsebino</a>
+
+<header>
+  <nav>
+    <a href="index.html" class="brand">Gostilnica Slatnik<small>Novo mesto</small></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Domov</a></li>
+      <li><a href="o-nas.html">O nas</a></li>
+      <li><a href="ponudba.html" class="active">Ponudba</a></li>
+      <li><a href="sezonska-ponudba.html">Sezonska osvežitev</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li class="nav-cta"><a href="tel:+38673344373" class="btn btn-outline-dark btn-sm">Pokliči za naročilo</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Odpri meni" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" style="background-image:linear-gradient(180deg, rgba(35,22,15,0.65), rgba(35,22,15,0.78)), url('https://images.unsplash.com/photo-1548365328-9f547fb0953b?auto=format&fit=crop&w=1800&q=75');">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Domov</a> / Ponudba</div>
+      <span class="eyebrow">Jedilnik</span>
+      <h1>Naša ponudba</h1>
+      <p>Vse pice pečemo po domačem receptu, iz svežih in skrbno izbranih sestavin. Cene so informativne.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="tabs" id="menuTabs" role="tablist">
+        <button class="tab-btn active" data-tab="pice" type="button">Pice</button>
+        <button class="tab-btn" data-tab="valentinova" type="button">Specialiteta</button>
+        <button class="tab-btn" data-tab="ostalo" type="button">Ostalo</button>
+        <button class="tab-btn" data-tab="sladice" type="button">Sladice</button>
+      </div>
+
+      <div class="tab-panel active" id="panel-pice">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&fit=crop&w=700&q=70" alt="Slatenska Pica"></div>
+            <div class="menu-card-body"><h4>Slatenska Pica <span class="price">11,50 €</span></h4><p>Naša podpisna pica po receptu Gostilnice Slatnik — bogata in polnega okusa.</p></div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?auto=format&fit=crop&w=700&q=70" alt="Hribska Pica"></div>
+            <div class="menu-card-body"><h4>Hribska Pica <span class="price">12,00 €</span></h4><p>Pica navdihnjena z okusi podeželja in domačih dobrot.</p></div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=700&q=70" alt="Velikonočna Pica"></div>
+            <div class="menu-card-body"><h4>Velikonočna Pica <span class="price">12,50 €</span></h4><p>Praznična kombinacija sestavin za posebne priložnosti.</p></div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=70" alt="Klasična Pica"></div>
+            <div class="menu-card-body"><h4>Klasična Pica <span class="price">10,00 €</span></h4><p>Enostavna, a nepogrešljiva klasika za vsak okus.</p></div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=700&q=70" alt="Vrtnarska Pica"></div>
+            <div class="menu-card-body"><h4>Vrtnarska Pica <span class="price">11,00 €</span></h4><p>Sveža zelenjava naravnost iz vrta na hrustljavem testu.</p></div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1552539618-7eec9b4d1796?auto=format&fit=crop&w=700&q=70" alt="Špargljeva Pica"></div>
+            <div class="menu-card-body"><h4>Špargljeva Pica <span class="price">13,00 €</span></h4><p>Sezonski šparglji v skrbno uravnoteženi kombinaciji.</p></div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1512838243191-e81e8f66f1fd?auto=format&fit=crop&w=700&q=70" alt="Vegan Pizza"></div>
+            <div class="menu-card-body"><h4>Vegan Pizza <span class="price">11,50 €</span></h4><p>Popolnoma rastlinska pica za vse ljubitelje veganske kuhinje.</p></div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1548369937-47519962c11a?auto=format&fit=crop&w=700&q=70" alt="Cheese Pizza"></div>
+            <div class="menu-card-body"><h4>Cheese Pizza <span class="price">10,50 €</span></h4><p>Bogata sirna kombinacija za vse ljubitelje sira.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-valentinova">
+        <div class="special-card">
+          <div class="special-card-photo"><img class="photo" style="width:100%;height:100%;object-fit:cover;" src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=900&q=75" alt="Valentinova Pica"></div>
+          <div class="special-card-body">
+            <span class="special-tag">Specialitetna pica</span>
+            <h3>Valentinova Pica</h3>
+            <p>Elegantna kombinacija za posebne trenutke — nežen dimljen losos z okusi feta sira in svežo rukolo.</p>
+            <ul class="ingredient-list">
+              <li>Pelati</li><li>Mocarela</li><li>Dimljen losos</li><li>Rukola</li><li>Feta sir</li><li>Paradižnik</li>
+            </ul>
+            <div class="special-price">14,90 €</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-ostalo">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=70" alt="Domači Hamburger"></div>
+            <div class="menu-card-body"><h4>Domači Hamburger <span class="price">10,50 €</span></h4><p>Sočen domači hamburger, postrežen s hišnimi prilogami.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-sladice">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-photo"><img class="photo" src="https://images.unsplash.com/photo-1551106652-a5bcf4b09ac6?auto=format&fit=crop&w=700&q=70" alt="Krofki"></div>
+            <div class="menu-card-body"><h4>Krofki <span class="price">4,50 €</span></h4><p>Sladke in slastne dobrote iz prijazne Gostilnice Slatnik.</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="cta-strip">
+    <h2>Izbrali ste? Pokličite in naročite.</h2>
+    <p>Pico vam pripravimo sveže, tudi za odnesti domov.</p>
+    <a href="tel:+38673344373" class="btn btn-primary">Pokliči: (07) 334 43 73</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Gostilnica Slatnik</h3>
+        <p>Domače pice in prijazna postrežba v Novem mestu.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Povezave</h4>
+        <a href="index.html">Domov</a>
+        <a href="o-nas.html">O nas</a>
+        <a href="ponudba.html">Ponudba</a>
+        <a href="sezonska-ponudba.html">Sezonska osvežitev</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <a href="tel:+38673344373">(07) 334 43 73</a>
+        <a href="kontakt.html">Veliki Slatnik 15, Novo mesto</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Gostilnica Slatnik Klavdija Luzar s.p. Vse pravice pridržane.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
