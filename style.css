@@ -371,6 +371,44 @@ footer{background:#20160f;color:#c7b6a2;padding:56px 0 24px;}
 .skip-link{position:absolute;left:-999px;}
 .skip-link:focus{left:8px;top:8px;background:#fff;padding:6px 10px;border-radius:4px;z-index:2000;}
 
+/* smooth native fade/slide between page navigations (supported browsers only, no fallback needed) */
+@view-transition{
+  navigation:auto;
+}
+::view-transition-old(root){
+  animation:page-fade-out 0.22s ease both;
+}
+::view-transition-new(root){
+  animation:page-fade-in 0.28s ease both;
+}
+@keyframes page-fade-out{to{opacity:0;transform:translateY(-6px);}}
+@keyframes page-fade-in{from{opacity:0;transform:translateY(10px);}}
+
+/* hero entrance on load */
+.home-hero .container > *, .page-hero .container > *{
+  opacity:0;
+  animation:hero-in 0.7s ease forwards;
+}
+.home-hero .tagline, .page-hero .breadcrumb{animation-delay:0.05s;}
+.home-hero h1, .page-hero .eyebrow{animation-delay:0.15s;}
+.home-hero p, .page-hero h1{animation-delay:0.25s;}
+.home-hero .hero-buttons, .page-hero p{animation-delay:0.35s;}
+@keyframes hero-in{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+/* scroll-reveal for cards and sections */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity 0.6s ease, transform 0.6s ease;}
+.reveal.is-visible{opacity:1;transform:translateY(0);}
+.menu-grid .reveal:nth-child(2), .reviews-grid .reveal:nth-child(2), .stats .reveal:nth-child(2){transition-delay:0.08s;}
+.menu-grid .reveal:nth-child(3), .reviews-grid .reveal:nth-child(3), .stats .reveal:nth-child(3){transition-delay:0.16s;}
+.menu-grid .reveal:nth-child(4), .stats .reveal:nth-child(4){transition-delay:0.24s;}
+.menu-grid .reveal:nth-child(n+5){transition-delay:0.3s;}
+
+@media (prefers-reduced-motion: reduce){
+  .home-hero .container > *, .page-hero .container > *{animation:none;opacity:1;}
+  .reveal{opacity:1;transform:none;transition:none;}
+  ::view-transition-old(root), ::view-transition-new(root){animation:none;}
+}
+
 @media (max-width:860px){
   section{padding:64px 0;}
   .about-grid, .contact-grid, .seasonal-grid{grid-template-columns:1fr;}

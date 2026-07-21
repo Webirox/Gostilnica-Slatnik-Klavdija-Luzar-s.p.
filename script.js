@@ -40,4 +40,24 @@ document.addEventListener('DOMContentLoaded', function () {
       img.classList.add('ph-fallback');
     });
   });
+
+  // scroll-reveal entrance animation for cards and section headers
+  var revealTargets = document.querySelectorAll(
+    '.feature-card, .menu-card, .review-card, .special-card, .drink-card, .about-visual, .section-head, .stat, .contact-grid > *'
+  );
+  revealTargets.forEach(function (el) { el.classList.add('reveal'); });
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealTargets.forEach(function (el) { observer.observe(el); });
+  } else {
+    revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
+  }
 });
