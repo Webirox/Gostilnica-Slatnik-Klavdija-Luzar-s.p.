@@ -55,9 +55,15 @@ document.addEventListener('DOMContentLoaded', function () {
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px 150px 0px' });
     revealTargets.forEach(function (el) { observer.observe(el); });
   } else {
     revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
   }
+
+  // safety net: never let content stay hidden if the observer misses something
+  // (fast scroll, tab restore, automated screenshots resizing the viewport, etc.)
+  setTimeout(function () {
+    revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
+  }, 1500);
 });
