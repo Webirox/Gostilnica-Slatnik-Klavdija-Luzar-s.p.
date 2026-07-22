@@ -26,8 +26,8 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 h1,h2,h3,h4{
-  font-family:'Fraunces', Georgia, serif;
-  font-weight:600;
+  font-family:'Playfair Display', Georgia, serif;
+  font-weight:700;
   line-height:1.2;
   color:var(--brick-dark);
 }
@@ -92,9 +92,9 @@ nav{
   margin:0 auto;
 }
 .brand{
-  font-family:'Fraunces', Georgia, serif;
+  font-family:'Playfair Display', Georgia, serif;
   font-size:1.2rem;
-  font-weight:600;
+  font-weight:700;
   color:var(--brick-dark);
   letter-spacing:0.3px;
 }
@@ -208,7 +208,7 @@ nav{
   display:flex;flex-wrap:wrap;justify-content:space-around;gap:26px;padding:38px 24px;
 }
 .stat{text-align:center;min-width:130px;}
-.stat strong{display:block;font-size:1.9rem;font-family:'Fraunces', serif;color:var(--gold);}
+.stat strong{display:block;font-size:1.9rem;font-family:'Playfair Display', serif;color:var(--gold);}
 .stat span{font-size:0.82rem;color:#e2d3bc;letter-spacing:0.3px;}
 
 /* photo helpers with graceful fallback */
@@ -233,7 +233,7 @@ nav{
   display:flex;align-items:center;gap:12px;
   box-shadow:0 8px 20px rgba(0,0,0,0.18);
 }
-.about-badge strong{font-size:1.5rem;color:var(--gold);font-family:'Fraunces', serif;}
+.about-badge strong{font-size:1.5rem;color:var(--gold);font-family:'Playfair Display', serif;}
 .about-badge span{font-size:0.82rem;color:#5a4c3d;}
 .about-features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px;}
 .feature-card{
@@ -292,7 +292,7 @@ nav{
   background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.3);
   padding:6px 14px;border-radius:4px;font-size:0.82rem;
 }
-.special-price{font-size:1.4rem;font-weight:700;color:var(--gold);font-family:'Fraunces', serif;}
+.special-price{font-size:1.4rem;font-weight:700;color:var(--gold);font-family:'Playfair Display', serif;}
 
 /* compact add-on / extras list (Dodatki) */
 .addon-list{margin-top:44px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:6px 28px;}
@@ -320,7 +320,7 @@ nav{
 .drink-photo{width:100%;height:200px;background:var(--paper-2);}
 .drink-card-body{padding:26px 28px;}
 .drink-card-body h3{font-size:1.3rem;margin-bottom:6px;}
-.drink-price{color:var(--gold);font-weight:700;font-size:1.1rem;margin-bottom:10px;font-family:'Fraunces',serif;}
+.drink-price{color:var(--gold);font-weight:700;font-size:1.1rem;margin-bottom:10px;font-family:'Playfair Display',serif;}
 .drink-card-body p{font-size:0.88rem;color:var(--muted);}
 
 /* reviews */
@@ -380,7 +380,7 @@ footer{background:var(--brick-dark);color:#d8c6ad;padding:64px 0 24px;position:r
 .footer-bottom{padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:0.8rem;color:#b39a76;}
 
 /* wordmark lockup (used in nav, hero, footer) */
-.wordmark{font-family:'Fraunces', serif;line-height:0.92;}
+.wordmark{font-family:'Playfair Display', serif;line-height:0.92;}
 .wordmark .w1{display:block;font-size:0.42em;font-weight:500;}
 .wordmark .w2{display:block;font-size:1em;font-weight:600;margin-top:-0.05em;}
 .script-tag{font-family:'Playfair Display', serif;font-style:italic;font-size:1rem;color:var(--paper);opacity:0.85;}
@@ -402,16 +402,16 @@ footer{background:var(--brick-dark);color:#d8c6ad;padding:64px 0 24px;position:r
 .menu-list-split{display:grid;grid-template-columns:0.85fr 1.15fr;gap:52px;align-items:start;}
 .menu-list-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;position:sticky;top:110px;}
 .menu-list-row{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);}
-.menu-list-row .name{font-family:'Fraunces', serif;font-size:1.08rem;color:var(--brick-dark);display:block;}
+.menu-list-row .name{font-family:'Playfair Display', serif;font-size:1.08rem;color:var(--brick-dark);display:block;}
 .menu-list-row .desc{display:block;font-family:'Inter',sans-serif;font-size:0.82rem;color:var(--muted);margin-top:3px;}
 .menu-list-row .price{font-weight:700;color:var(--gold);white-space:nowrap;font-size:0.95rem;}
 
 /* narrative/story block (no fabricated dates — real facts only) */
 .story-block{background:var(--paper-2);}
-.story-quote{font-family:'Fraunces', serif;font-size:clamp(1.5rem, 2.8vw, 2.2rem);line-height:1.4;color:var(--brick-dark);max-width:800px;}
+.story-quote{font-family:'Playfair Display', serif;font-size:clamp(1.5rem, 2.8vw, 2.2rem);line-height:1.4;color:var(--brick-dark);max-width:800px;}
 .story-quote .accent{color:var(--gold);}
 .story-meta{display:flex;gap:44px;margin-top:38px;flex-wrap:wrap;}
-.story-stat strong{display:block;font-family:'Fraunces', serif;font-size:2rem;color:var(--brick);}
+.story-stat strong{display:block;font-family:'Playfair Display', serif;font-size:2rem;color:var(--brick);}
 .story-stat span{font-size:0.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;}
 
 @media (max-width:860px){
